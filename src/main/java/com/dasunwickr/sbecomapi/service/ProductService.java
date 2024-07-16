@@ -2,7 +2,6 @@ package com.dasunwickr.sbecomapi.service;
 
 import com.dasunwickr.sbecomapi.dao.ProductsDAO;
 import com.dasunwickr.sbecomapi.model.Product;
-import lombok.Setter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
@@ -37,7 +36,7 @@ public class ProductService {
         return product;
     }
 
-    public Product updateProduct (int id, Product product, MultipartFile imageFile) throws IOException {
+    public Product updateProduct (Product product, MultipartFile imageFile) throws IOException {
         product.setImageData(imageFile.getBytes());
         product.setImageName(imageFile.getOriginalFilename());
         product.setImageType(imageFile.getContentType());

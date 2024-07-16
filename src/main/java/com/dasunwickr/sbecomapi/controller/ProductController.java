@@ -61,9 +61,9 @@ public class ProductController {
 
     @PutMapping("/products/{id}")
     public ResponseEntity<?> updateProduct(@PathVariable int id, @RequestPart Product product, @RequestPart MultipartFile imageFile) {
-        Product product1 = null;
+        Product product1;
         try {
-            product1 = productService.updateProduct(id, product, imageFile);
+            product1 = productService.updateProduct(product, imageFile);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

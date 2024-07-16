@@ -47,4 +47,8 @@ public class ProductService {
     public void deleteProduct(int id) {
         productsDAO.deleteById(id);
     }
+
+    public List<Product> searchProducts(String keyword) {
+        return productsDAO.searchProduct(keyword);
+    }
 }

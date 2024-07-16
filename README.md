@@ -1,4 +1,4 @@
-# Spring Boot Simple E-Commerce API
+# Spring Boot Simple API
 
 This project implements a RESTful API for managing products with image upload capabilities, built using Spring Boot, Spring Data JPA, Lombok, and an H2 in-memory database.
 

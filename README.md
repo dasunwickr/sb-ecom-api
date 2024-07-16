@@ -21,7 +21,7 @@ This project implements a RESTful API for managing products with image upload ca
 
 ## Installation
 1. Clone the repository:
-   ```bash
+```bash
    git clone https://github.com/your-username/spring-boot-product-api.git
    cd spring-boot-product-api
    ```
